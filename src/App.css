@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,25 +9,57 @@
 }
 
 .App-header {
+  font-family: 'Sue Ellen Francisco', cursive;
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 3em;
   color: white;
+  letter-spacing: 2px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background-color: #FFF;
+  margin: 10px;
 }
+
+button {
+  margin: 5px;
+  font-family: monospace;
+}
+
+.container {
+  background-color: #f8f8f8;
+  margin-top: 20px;
+  font-family: sans-serif;
+  padding: 10px;
+  border-bottom: 5px solid #ff0053;
+}
+
+.joke {
+  font-weight: bold;
+}
+
+.freeWill {
+  padding-top: 10px;
+  font-family: monospace;
+  color: #ff0053;
+  font-size: large;
+}
+ 
+.temp {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+/* colors:
+#ff0053 pinkki
+#f8f8f8 vaalea harmaa
+#fff valkea   #282c34;*/
