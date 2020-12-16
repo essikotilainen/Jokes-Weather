@@ -11,9 +11,14 @@ Jokes are from https://official-joke-api.appspot.com/random_joke . There is no n
 
 Weather information is fetched from https://openweathermap.org/. There you can register and get your own free API-key. My personal API-key is hardcoded in this app, so for this there is no need to get your own. Please use responsibly.
 
+## Problems:
+The icon for empty img is visible before weather search is done. Haven’t figured out yet how to fix it. Let me know if you have a solution!
+
 ## Contact:
 Essi Kotilainen
+
 LinkedIn: https://www.linkedin.com/in/essi-kotilainen/
+
 Project Link: https://github.com/essikotilainen/Jokes-Weather
 
 ## Acknowlegments:
