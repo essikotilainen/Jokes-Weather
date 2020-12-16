@@ -12,10 +12,14 @@ export default function Clock() {
     const [temp, setTemp] = useState();
     const [icon, setIcon] = useState();
     const iconUrl = 'http://openweathermap.org/img/wn/' + icon + '@2x.png'
-    const [city, setCity] = useState();
+    const [city, setCity] = useState("");
 
     const getWeather = () => {
 
+        if (city == "") {
+            alert("Please enter city name.");
+        }
+        
         Axios.get(apiUrl + city + API_KEY + metric)
             .then(
                 (response) => {
