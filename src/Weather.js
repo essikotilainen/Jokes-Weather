@@ -16,7 +16,7 @@ export default function Clock() {
 
     const getWeather = () => {
 
-        if (city == "") {
+        if (city === "") {
             alert("Please enter city name.");
         }
         
@@ -24,10 +24,15 @@ export default function Clock() {
             .then(
                 (response) => {
                     console.log(response);
-                    setTemp("Temperature: " + response.data.main.temp);
+                    setTemp("Temperature: " + response.data.main.temp + "°C");
                     setIcon(response.data.weather[0].icon);
                     console.log(city);
                 });
+    }
+
+    const clearResult = () => {
+        setTemp("");
+        setIcon("");
     }
 
     return (
@@ -37,13 +42,14 @@ export default function Clock() {
                 <div className="form-group">
                     <label>City</label>
                     <input type="text" className="form-control col-6" id="cityName" value={city}
-                        onChange={e => setCity(e.target.value)} placeholder="Enter city name"></input>
+                        onChange={e => setCity(e.target.value)} onClick={clearResult}
+                        placeholder="Enter city name"></input>
                 </div>
             </form>
             <button className="btn btn-success" onClick={getWeather}>&rarr;</button>
             <br />
             <p className="temp">{temp}</p>
-            <img src={iconUrl} />
+            <img className="weatherIcon" src={iconUrl} alt="weather icon"/>
         </div>
     )
 }

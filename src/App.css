@@ -25,12 +25,14 @@
   color: white;
   font-family: 'Sue Ellen Francisco', cursive;
   background-color: #282c34;
-  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   left: 0;
   bottom: 0;
   height: 50px;
   width: 100%;
-  text-align: center;
   padding-top: 10px;
   font-size: 1.5em;
 }
@@ -48,6 +50,7 @@ button {
 .container {
   background-color: #f8f8f8;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-family: sans-serif;
   padding: 10px;
   border-bottom: 5px solid #ff0053;
