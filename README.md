@@ -1,3 +1,31 @@
+# Jokes-Weather
+
+Jokes-Weather is a little web application where you can get a random joke and find out the current weather. The usage of the site should be pretty self-explanatory.
+
+## Built with:
+- React
+- Bootstrap
+
+## API:
+Jokes are from https://official-joke-api.appspot.com/random_joke . There is no need to register, the jokes are free.
+
+Weather information is fetched from https://openweathermap.org/. There you can register and get your own free API-key. My personal API-key is hardcoded in this app, so for this there is no need to get your own. Please use responsibly.
+
+## Contact:
+Essi Kotilainen
+LinkedIn: https://www.linkedin.com/in/essi-kotilainen/
+Project Link: https://github.com/essikotilainen/Jokes-Weather
+
+## Acknowlegments:
+- Axios
+- Font awesome
+- Google Font
+
+
+##
+Below Reacts own instruction for Create React App:
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
