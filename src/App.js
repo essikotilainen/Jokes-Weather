@@ -5,11 +5,12 @@ import Weather from './Weather';
 
 function App() {
   return (
-    <>
-    <header className="App-header">Welcome</header>
-      <Jokes />
-      <Weather/>
-      </>
+    <div>
+      <header className="App-header">Welcome</header>
+        <Jokes />
+        <Weather />
+      <footer className="App-footer">E.K.</footer>
+    </div>
   )
 }
 

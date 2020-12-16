@@ -9,7 +9,7 @@
 }
 
 .App-header {
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: sans-serif;
   background-color: #282c34;
   height: 100px;
   display: flex;
@@ -18,15 +18,25 @@
   justify-content: center;
   font-size: 3em;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-footer {
+  color: white;
+  font-family: 'Sue Ellen Francisco', cursive;
+  background-color: #282c34;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.5em;
 }
 
 body {
-  background-color: #FFF;
+  background-color: #fff;
   margin: 10px;
 }
 
@@ -41,6 +51,7 @@ button {
   font-family: sans-serif;
   padding: 10px;
   border-bottom: 5px solid #ff0053;
+  width: 50%;
 }
 
 .joke {
@@ -53,13 +64,21 @@ button {
   color: #ff0053;
   font-size: large;
 }
- 
+
 .temp {
   margin-top: 10px;
   margin-bottom: 0px;
 }
 
+@media only screen and (max-width: 1140px) {
+  .container {
+    width: 100%;
+  }
+}
+
+
 /* colors:
 #ff0053 pinkki
 #f8f8f8 vaalea harmaa
-#fff valkea   #282c34;*/
+#fff valkea   
+#282c34 reactin tumma harmaa*/

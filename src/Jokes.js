@@ -12,6 +12,7 @@ export default function Jokes() {
                 console.log(response);
                 setJoke(response.data.setup + " ..." + response.data.punchline);
             });
+            
     }
 
     const noJoke = () => {
